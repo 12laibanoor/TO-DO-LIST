@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="note.css">
+    <link rel="icon" href="5063397.png">
+</head>
+<body>
+   <nav>
+    <h1>My Notes App</h1>
+    <div class="searchbar">
+      <input type="text" placeholder="search your notes" />
+      <img src="reaction-icon-to-posts-on-social-media-and-video-streaming-free-png.webp" alt="">
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <div class="add-box">
+      <div class="icon">
+        <h3 onclick="opennote()">+</h3>
+      </div>
+      <p>Add new note</p>
+    </div>
+  </div>
+
+  <!-- Notes will appear here -->
+  <div class="wrapper" id="notes-container"></div>
+
+  <!-- Modal Popup -->
+  <div id="id01" class="modal">
+    <div class="popup-box">
+      <span class="close" onclick="closemodel()">&#10006;</span>
+      <h2>Add new notes</h2>
+      <br>
+      <hr>
+      <br>
+      <form onsubmit="return validatenote()">
+        <label>Title</label>
+        <input id="input-field" type="text" placeholder="Title" />
+        <br><br>
+        <label>Description</label>
+        <textarea id="text-Area" placeholder="Write Your Notes"></textarea>
+        <button class="btn1" type="submit">Add note</button>
+      </form>
+    </div>
+  </div>
+ 
+   <script src="note.js"></script> 
+</body>
+</html>
